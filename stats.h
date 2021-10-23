@@ -1,4 +1,4 @@
-#include "GetAlert.h"
+
 
 struct Stats {
   float average;
