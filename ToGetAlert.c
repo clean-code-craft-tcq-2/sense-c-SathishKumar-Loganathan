@@ -1,14 +1,21 @@
+int emailAlertCallCount = 0;
+int ledAlertCallCount = 0;
+
 void emailAlerter(void)
 {
-    // Lets get called and do Nothing :P
+    emailAlertCallCount++;
 }
 
 void ledAlerter(void)
 {
-    // Lets get called and do Nothing :P 
+    ledAlertCallCount++;
 }
 
-void check_and_alert(maxThreshold, alerters, computedStats)
+void check_and_alert(float myMaxThreshold, alerter_funcptr myAlerters, Struct Stats myComputedStats)
 {
-    
+    if(myMaxThreshold > myComputedStats.max)
+    {
+        myAlerters[0]();
+        myAlerters[1]();
+    }
 }
