@@ -5,12 +5,12 @@ int ledAlertCallCount = 0;
 
 void emailAlerter(void)
 {
-    emailAlertCallCount++;
+    emailAlertCallCount = 1;
 }
 
 void ledAlerter(void)
 {
-    ledAlertCallCount++;
+    ledAlertCallCount = 1;
 }
 
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
