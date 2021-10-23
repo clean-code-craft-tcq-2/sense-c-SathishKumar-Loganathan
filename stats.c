@@ -18,7 +18,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     {
         s.average = numberset[loopCount];
         s.min = numberset[loopCount];
-        s.max = numbreset[loopCount];
+        s.max = numberset[loopCount];
         
         for(loopCount=0; loopCount < setlength; loopCount++)
         {
