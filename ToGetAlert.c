@@ -1,3 +1,5 @@
+#include "ToGetAlert.h"
+
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
@@ -11,7 +13,7 @@ void ledAlerter(void)
     ledAlertCallCount++;
 }
 
-void check_and_alert(float myMaxThreshold, alerter_funcptr myAlerters, Struct Stats myComputedStats)
+void check_and_alert(float myMaxThreshold, int myAlerters, Struct Stats myComputedStats)
 {
     if(myMaxThreshold > myComputedStats.max)
     {
