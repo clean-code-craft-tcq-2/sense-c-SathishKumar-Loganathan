@@ -16,7 +16,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     }
     else
     {
-        s.average = numberset[loopCount];
+        s.average = 0;
         s.min = numberset[loopCount];
         s.max = numberset[loopCount];
         
