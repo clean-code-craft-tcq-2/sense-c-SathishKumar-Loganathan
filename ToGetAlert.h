@@ -1,2 +1,4 @@
-void emailAlerter(void);
-void ledAlerter(void);
+#include <stdlib.h>
+
+int emailAlerter;
+int ledAlerter;
